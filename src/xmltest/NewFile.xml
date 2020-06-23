@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE notes [
+  <!ELEMENT notes (note+)>
+  <!ELEMENT note (to?,from,heading,(body|content))>
+  <!ELEMENT to      (#PCDATA)>
+  <!ELEMENT from    (#PCDATA)>
+  <!ELEMENT heading (#PCDATA)>
+  <!ELEMENT body    (#PCDATA)>
+  <!ELEMENT content (#PCDATA)>
+  <!ATTLIST note name CDATA ''>
+]>
+<!-- 不写就是一次；+至少一次；？0次或1次；* 0次或多次 -->
+<notes>
+	<note name='101'>
+		<to>book</to>
+		<from>google</from>
+		<heading>&lt;端午节&gt;</heading>
+		<content>
+			你好
+		</content>
+	</note>
+	<note name='102'>
+		<to>book</to>
+		<from>google</from>
+		<heading>&lt;端午节&gt;</heading>
+		<content>
+			你好
+		</content>
+	</note>
+</notes>
